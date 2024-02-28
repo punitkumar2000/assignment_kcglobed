@@ -10,5 +10,7 @@ An e-commerce website built using the Django Rest Framework.
 - python manage.py makemigrations
 - python manage.py migrate
 5. To start the server, run: python manage.py runserver
-6. Explore the assignment APIs using the provided Postman collection.
+6. Explore the assignment APIs using the provided Postman collection: https://drive.google.com/drive/folders/1AltpZDo3KqhYemmsDx3Y5zZ1ka8mRjbV.
+
+
 
