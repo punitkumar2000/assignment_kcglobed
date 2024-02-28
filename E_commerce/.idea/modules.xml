@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../CODEFIGHT/.idea/CODEFIGHT.iml" filepath="$PROJECT_DIR$/../../CODEFIGHT/.idea/CODEFIGHT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/E_commerce.iml" filepath="$PROJECT_DIR$/.idea/E_commerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../MYVIRTUALCART/.idea/MYVIRTUALCART.iml" filepath="$PROJECT_DIR$/../../MYVIRTUALCART/.idea/MYVIRTUALCART.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TEXTMODIFIER/.idea/TEXTMODIFIER.iml" filepath="$PROJECT_DIR$/../../TEXTMODIFIER/.idea/TEXTMODIFIER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../contact_book/.idea/contact_book.iml" filepath="$PROJECT_DIR$/../contact_book/.idea/contact_book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../employee_manage/.idea/employee_manage.iml" filepath="$PROJECT_DIR$/../employee_manage/.idea/employee_manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../linkedin/.idea/linkedin.iml" filepath="$PROJECT_DIR$/../../linkedin/.idea/linkedin.iml" />
+    </modules>
+  </component>
+</project>
