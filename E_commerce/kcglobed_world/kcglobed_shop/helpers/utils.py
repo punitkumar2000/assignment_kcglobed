@@ -221,17 +221,6 @@ def email_sender(email, tracking_id=None, otp=None, order_status=None, confirm_o
         return response
 
 
-# def convert_to_string_with_quotes(input_list):
-#     if isinstance(input_list, list):
-#         if all(isinstance(item, str) for item in input_list):
-#             # If all elements are strings, join them with ', ' and add single quotes
-#             return f"'{', '.join(input_list)}'"
-#         elif len(input_list) == 1:
-#             # If there's only one element, add single quotes
-#             return f"'{input_list[0]}'"
-#     return None  # Invalid input
-
-
 def upload_to_s3(file_content, bucket_name, s3_file_key):
     try:
 
