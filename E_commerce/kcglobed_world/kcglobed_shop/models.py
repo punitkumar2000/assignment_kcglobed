@@ -12,7 +12,6 @@ class Product(models.Model):
     StockQuantity = models.IntegerField()
     Category = models.CharField(max_length=500)
     CompanyName = models.CharField(max_length=500, null=True)
-    # ProductImage = models.ImageField(upload_to='product_images/')
     ProductImage = models.CharField(max_length=500)
     AddedTime = models.DateTimeField(auto_now_add=True)
     ModifiedTime = models.DateTimeField(auto_now=True)
