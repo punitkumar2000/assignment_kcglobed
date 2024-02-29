@@ -272,6 +272,7 @@ def productsApi_admin(request):
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Adding"}, status=500, safe=False)
 
+    
     if request.method == 'GET':
         try:
             products = Product.objects.all()
@@ -294,7 +295,6 @@ def productsApi_admin(request):
                     products_by_category[category] = []
 
                 products_by_category[category].append(data)
-            print("products_by_category", products_by_category)
             return JsonResponse({"data": products_by_category}, status=200, safe=False)
 
         except Exception as e:
@@ -303,6 +303,7 @@ def productsApi_admin(request):
             traceback.print_exc()
             return JsonResponse({"message": "Exception Raised in Fetching All Products"}, status=500, safe=False)
 
+    
     if request.method == "PUT":
         try:
             user_id = request.user.get("UserId", None)
@@ -366,6 +367,7 @@ def productsApi_admin(request):
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Updating"}, status=500, safe=False)
 
+    
     if request.method == 'DELETE':
         try:
             user_id = request.user.get("UserId", None)
@@ -553,6 +555,7 @@ def cartApi(request):
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Adding Product to Cart"}, status=500, safe=False)
 
+    
     if request.method == 'GET':
         try:
             user_id = request.user.get("UserId", None)
@@ -675,6 +678,7 @@ def cartApi(request):
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Updating Product to Cart"}, status=500, safe=False)
 
+    
     if request.method == 'DELETE':
         try:
             user_id = request.user.get("UserId", None)
@@ -820,6 +824,7 @@ def buyorderApi(request):
             traceback.print_exc()
             return JsonResponse({"message": "Exception Raised in Ordering the Products"}, status=500, safe=False)
 
+    
     if request.method == 'GET':
         try:
             user_id = request.user.get("UserId", None)
@@ -854,6 +859,7 @@ def buyorderApi(request):
             traceback.print_exc()
             return JsonResponse({"message": "Exception Raised in Fetching"}, status=500, safe=False)
 
+    
     if request.method == 'PUT':
         try:
             tracking_id = request.GET.get("tracking_id")
@@ -940,6 +946,7 @@ def trackorderApi(request):
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Fetching"}, status=200, safe=False)
 
+    
     if request.method == 'PUT':
         try:
             user_id = request.user.get("UserId")
@@ -992,8 +999,4 @@ def trackorderApi(request):
             logging.error(error_message)
             traceback.print_exc()
         return JsonResponse({"message": "Exception Raised in Updating the Order Status"}, status=500, safe=False)
-
-    from django.http import JsonResponse
-    from rest_framework.parsers import JSONParser
-    from .models import Product
 
