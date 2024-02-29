@@ -19,8 +19,6 @@ class UpdateStockSerializers(serializers.ModelSerializer):
 
 class ProductSerializers(serializers.ModelSerializer):
 
-    # ProductImage = serializers.ImageField(max_length=None, use_url=True)
-
     class Meta:
         model = Product
         fields = ('ProductId', 'UserId', 'ProductName', 'Description', 'Price', 'StockQuantity', 'Category', 'CompanyName', 'ProductImage', 'AddedTime', 'ModifiedTime')
