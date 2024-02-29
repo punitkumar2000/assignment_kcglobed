@@ -5,7 +5,6 @@ from django.http.response import JsonResponse
 from kcglobed_shop.helpers.my_sql_connector import my_sql_execute_query
 
 
-# from kcglobed_shop.helpers.utils import PRIVATE_KEY
 PRIVATE_KEY = """
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCu+3hU65jUp2qi
 +fRJDmjm2hUcNaq6FUH+QqhX/kZ8DXxAaorqs0BHzbpGUyizM01hxB5DeolbfBoB
@@ -68,7 +67,6 @@ def validate_x_api(payload, x_api_key):
         return True, "Valid x_api-key"
 
     except Exception as e:
-        print("e", e)
         return False, "Internal Server Error."
 
 
